@@ -80,8 +80,8 @@ footer {
 /* ADDITIONAL STYLES
 /*******************************************/
 @media only screen and (max-width: 700px){
-     *{
-     font-size:.7rem;
+     #card p{
+     font-size:1.2rem;
      }
 }
      
