@@ -2,17 +2,41 @@
 <html lang="en">
 	<head>
     	<meta charset="utf-8">
-    	<meta name="description" content="Your description goes here">
-    	<meta name="keywords" content="one, two, three">
+    	<meta name="description" content="Trivia Night Game">
+    	<meta name="keywords" content="Trivia, Jeopardy, Game">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Blank Template</title>
-
-		<!-- external CSS link -->
+		<title>Trivia Night</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet"> 
+				<!-- external CSS link -->
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
+		<h1>Trivia Night</h1>
+		<h2>Category: <span id="category"></span></h2>
+		<h3>Value: $<span id="value"></span></h3>
+		<section id="card">
+			<p id="questionText"></p>
+			<p id="answer" class="hidden"></p>
+			
+		</section>
 
+		<button id="question">Get Random Question</button>
+		<button  id="show"> Show Answer</button>
+		<section id="allPlayers">
+			<section id="player1">
+				<p>Team 1: <span id="p1"></span></p>
+				<button id="p1Correct">Correct</button>
+				<button id="p1Wrong">Wrong</button>
+			</section>
+			<section id="player2">
+				<p>Team 2: <span id="p2"></span> </p>
+				<button id="p2Correct">Correct</button>
+				<button id="p2Wrong">Wrong</button>
+			</section>
+		</section>
 		<script type="text/javascript" src="js/main.js"></script>
 	</body>
 </html>
